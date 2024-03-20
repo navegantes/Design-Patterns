@@ -3,7 +3,6 @@ package com.nave.designpattern.factorymethods.solucao;
 import com.nave.designpattern.factorymethods.Produto;
 import com.nave.designpattern.factorymethods.TipoProdutoEnum;
 
-
 public class TesteProdutoFactoryMethod
 {
     public static void main(String[] args)
