@@ -1,0 +1,12 @@
+.idea/
+out/
+.vscode/
+
+Design-Patterns.iml
+
+*/.idea/
+*/out/
+
+Java/Design-Patterns.iml
+
+
