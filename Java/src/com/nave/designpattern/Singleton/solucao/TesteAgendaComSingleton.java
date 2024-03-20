@@ -1,10 +1,12 @@
 package com.nave.designpattern.Singleton.solucao;
 
 
+import java.lang.reflect.Constructor;
+import java.lang.reflect.InvocationTargetException;
+
 public class TesteAgendaComSingleton
 {
-  public static void main(String[] args)
-  {
+  public static void main(String[] args) throws NoSuchMethodException, InvocationTargetException, InstantiationException, IllegalAccessException {
     System.out.println("\nAgenda Singleton EAGER");
     AgendaSingletonEAGER agenda1 = AgendaSingletonEAGER.getInstance();
     AgendaSingletonEAGER agenda2 = AgendaSingletonEAGER.getInstance();
@@ -22,6 +24,15 @@ public class TesteAgendaComSingleton
 
     System.out.println(agendalazy1);
     System.out.println(agendalazy2);
+
+    // Reflection
+    Constructor<AgendaSingletonLAZY> constructorCracked = AgendaSingletonLAZY.class.getDeclaredConstructor();
+    constructorCracked.setAccessible(true);
+    AgendaSingletonLAZY agendaCracked1 = constructorCracked.newInstance();
+    AgendaSingletonLAZY agendaCracked2 = constructorCracked.newInstance();
+
+    System.out.println(agendaCracked1);
+    System.out.println(agendaCracked2);
 
     reservaDiaLAZY("Sexta");
     reservaDiaLAZY("Sabado");
