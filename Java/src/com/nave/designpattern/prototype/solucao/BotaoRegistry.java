@@ -45,4 +45,8 @@ public class BotaoRegistry {
         return botaoRegistry;
     }
 
+    public static Botao getBotao(String chave) {
+        return BotaoFactory.getInstance(REGISTRY.get(chave));
+    }
+
 }

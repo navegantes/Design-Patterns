@@ -21,4 +21,30 @@ public class Botao {
     public void setTipoBorda(TipoBordaEnum tipoBorda) {
         this.tipoBorda = tipoBorda;
     }
+
+    public String getCor() {
+        return cor;
+    }
+
+    public int getLargura() {
+        return largura;
+    }
+
+    public int getAltura() {
+        return altura;
+    }
+
+    public TipoBordaEnum getTipoBorda() {
+        return tipoBorda;
+    }
+
+    @Override
+    public String toString() {
+        return "Botao{" +
+                "cor='" + cor + '\'' +
+                ", largura=" + largura +
+                ", altura=" + altura +
+                ", tipoBorda=" + tipoBorda +
+                '}';
+    }
 }
