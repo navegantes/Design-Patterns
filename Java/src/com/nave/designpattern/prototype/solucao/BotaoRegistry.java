@@ -37,16 +37,20 @@ public class BotaoRegistry {
         REGISTRY.put("BOTAO_AZUL", botaoAzul);
     }
 
-    public static BotaoRegistry getInstance() {
-        if (Objects.isNull(botaoRegistry)) {
-            botaoRegistry = new BotaoRegistry();
-            return botaoRegistry;
-        }
-        return botaoRegistry;
-    }
+//    public static BotaoRegistry getInstance() {
+//        if (Objects.isNull(botaoRegistry)) {
+//            botaoRegistry = new BotaoRegistry();
+//            return botaoRegistry;
+//        }
+//        return botaoRegistry;
+//    }
 
     public static Botao getBotao(String chave) {
         return BotaoFactory.getInstance(REGISTRY.get(chave));
+    }
+
+    public static void addRegistry(String chave, Botao novoBotao) {
+        REGISTRY.put(chave, novoBotao);
     }
 
 }
