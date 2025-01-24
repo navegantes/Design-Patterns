@@ -1,7 +1,7 @@
-package com.nave.designpattern.prototype.solucao;
+package com.nave.designpattern.Prototype.solucao;
 
-import com.nave.designpattern.prototype.Botao;
-import com.nave.designpattern.prototype.TipoBordaEnum;
+import com.nave.designpattern.Prototype.Botao;
+import com.nave.designpattern.Prototype.TipoBordaEnum;
 
 public class TesteBotaoPrototype {
     public static void main(String[] args) {

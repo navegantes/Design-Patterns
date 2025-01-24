@@ -1,11 +1,11 @@
-package com.nave.designpattern.prototype.solucao;
-
-import com.nave.designpattern.prototype.Botao;
-import com.nave.designpattern.prototype.TipoBordaEnum;
+package com.nave.designpattern.Prototype.solucao;
 
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Objects;
+
+import com.nave.designpattern.Prototype.Botao;
+import com.nave.designpattern.Prototype.TipoBordaEnum;
 
 public class BotaoRegistry {
 
@@ -37,13 +37,13 @@ public class BotaoRegistry {
         REGISTRY.put("BOTAO_AZUL", botaoAzul);
     }
 
-//    public static BotaoRegistry getInstance() {
-//        if (Objects.isNull(botaoRegistry)) {
-//            botaoRegistry = new BotaoRegistry();
-//            return botaoRegistry;
-//        }
-//        return botaoRegistry;
-//    }
+    // public static BotaoRegistry getInstance() {
+    // if (Objects.isNull(botaoRegistry)) {
+    // botaoRegistry = new BotaoRegistry();
+    // return botaoRegistry;
+    // }
+    // return botaoRegistry;
+    // }
 
     public static Botao getBotao(String chave) {
         return BotaoFactory.getInstance(REGISTRY.get(chave));

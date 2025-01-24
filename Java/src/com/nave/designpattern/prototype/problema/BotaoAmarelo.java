@@ -1,7 +1,7 @@
-package com.nave.designpattern.prototype.problema;
+package com.nave.designpattern.Prototype.problema;
 
-import com.nave.designpattern.prototype.Botao;
-import com.nave.designpattern.prototype.TipoBordaEnum;
+import com.nave.designpattern.Prototype.Botao;
+import com.nave.designpattern.Prototype.TipoBordaEnum;
 
 public class BotaoAmarelo extends Botao {
     public BotaoAmarelo() {

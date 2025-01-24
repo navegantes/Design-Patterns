@@ -1,4 +1,4 @@
-package com.nave.designpattern.factorymethods;
+package com.nave.designpattern.Factorymethods;
 
-public class ProdutoFisico extends Produto{
+public class ProdutoFisico extends Produto {
 }

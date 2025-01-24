@@ -1,6 +1,6 @@
-package com.nave.designpattern.prototype.solucao;
+package com.nave.designpattern.Prototype.solucao;
 
-import com.nave.designpattern.prototype.Botao;
+import com.nave.designpattern.Prototype.Botao;
 
 public class BotaoFactory {
     public static Botao getInstance(Botao prototipo) {

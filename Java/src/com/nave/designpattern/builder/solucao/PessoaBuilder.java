@@ -1,8 +1,8 @@
-package com.nave.designpattern.builder.solucao;
-
-import com.nave.designpattern.builder.Pessoa;
+package com.nave.designpattern.Builder.solucao;
 
 import java.time.LocalDate;
+
+import com.nave.designpattern.Builder.Pessoa;
 
 public class PessoaBuilder {
     private String nome;
@@ -42,7 +42,8 @@ public class PessoaBuilder {
         return this;
     }
 
-//    public Pessoa criaPessoa() {
-//        return new Pessoa(nome, sobrenome, documento, email, apelido, dataNascimento);
-//    }
+    // public Pessoa criaPessoa() {
+    // return new Pessoa(nome, sobrenome, documento, email, apelido,
+    // dataNascimento);
+    // }
 }

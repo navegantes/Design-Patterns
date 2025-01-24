@@ -1,30 +1,28 @@
-package com.nave.designpattern.factorymethods.solucao;
+package com.nave.designpattern.Factorymethods.solucao;
 
-import com.nave.designpattern.factorymethods.Produto;
-import com.nave.designpattern.factorymethods.ProdutoFisico;
-import com.nave.designpattern.factorymethods.ProdutoDigital;
-import com.nave.designpattern.factorymethods.TipoProdutoEnum;
+import com.nave.designpattern.Factorymethods.Produto;
+import com.nave.designpattern.Factorymethods.ProdutoDigital;
+import com.nave.designpattern.Factorymethods.ProdutoFisico;
+import com.nave.designpattern.Factorymethods.TipoProdutoEnum;
 
-public class ProdutoFactory
-{
-    public static Produto getInstance(TipoProdutoEnum tipoProdutoEnum)
-    {
-//        switch (tipoProdutoEnum)
-//        {
-//            case FISICO:
-//                ProdutoFisico produtoFisico = new ProdutoFisico();
-//                produtoFisico.setPossuiDimensoesFisicas(true);
-//                return produtoFisico;
-//
-//            case DIGITAL:
-//                ProdutoDigital produtoDigital = new ProdutoDigital();
-//                produtoDigital.setPossuiDimensoesFisicas(false);
-//                return produtoDigital;
-//
-//            default:
-//                throw new IllegalArgumentException("Tipo de produto indisponível");
-//        }
-        if (tipoProdutoEnum == TipoProdutoEnum.FISICO){
+public class ProdutoFactory {
+    public static Produto getInstance(TipoProdutoEnum tipoProdutoEnum) {
+        // switch (tipoProdutoEnum)
+        // {
+        // case FISICO:
+        // ProdutoFisico produtoFisico = new ProdutoFisico();
+        // produtoFisico.setPossuiDimensoesFisicas(true);
+        // return produtoFisico;
+        //
+        // case DIGITAL:
+        // ProdutoDigital produtoDigital = new ProdutoDigital();
+        // produtoDigital.setPossuiDimensoesFisicas(false);
+        // return produtoDigital;
+        //
+        // default:
+        // throw new IllegalArgumentException("Tipo de produto indisponível");
+        // }
+        if (tipoProdutoEnum == TipoProdutoEnum.FISICO) {
             ProdutoFisico produtoFisico = new ProdutoFisico();
             produtoFisico.setPossuiDimensoesFisicas(true);
             return produtoFisico;
@@ -32,8 +30,7 @@ public class ProdutoFactory
             ProdutoDigital produtoDigital = new ProdutoDigital();
             produtoDigital.setPossuiDimensoesFisicas(false);
             return produtoDigital;
-        }
-        else {
+        } else {
             throw new IllegalArgumentException("Tipo de produto indisponível");
         }
     }

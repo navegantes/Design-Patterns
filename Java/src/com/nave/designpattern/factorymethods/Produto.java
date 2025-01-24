@@ -1,4 +1,4 @@
-package com.nave.designpattern.factorymethods;
+package com.nave.designpattern.Factorymethods;
 
 import java.math.BigDecimal;
 
