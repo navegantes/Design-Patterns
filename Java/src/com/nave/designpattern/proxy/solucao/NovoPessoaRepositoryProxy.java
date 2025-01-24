@@ -1,6 +1,6 @@
-package com.nave.designpattern.proxy.solucao;
+package com.nave.designpattern.Proxy.solucao;
 
-import com.nave.designpattern.proxy.PessoaRepository;
+import com.nave.designpattern.Proxy.PessoaRepository;
 
 public class NovoPessoaRepositoryProxy extends PessoaRepository implements ProxyPessoa {
 }

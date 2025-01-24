@@ -1,6 +1,6 @@
-package com.nave.designpattern.proxy;
+package com.nave.designpattern.Proxy;
 
-import com.nave.designpattern.builder.Pessoa;
+import com.nave.designpattern.Builder.Pessoa;
 import java.util.HashMap;
 import java.util.Map;
 

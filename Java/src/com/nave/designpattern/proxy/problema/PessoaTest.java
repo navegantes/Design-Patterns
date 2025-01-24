@@ -1,6 +1,6 @@
-package com.nave.designpattern.proxy.problema;
+package com.nave.designpattern.Proxy.problema;
 
-import com.nave.designpattern.builder.Pessoa;
+import com.nave.designpattern.Builder.Pessoa;
 import java.time.LocalDate;
 
 public class PessoaTest {
