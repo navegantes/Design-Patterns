@@ -1,8 +1,8 @@
-package com.nave.designpattern.builder.solucao;
-
-import com.nave.designpattern.builder.Pessoa;
+package com.nave.designpattern.Builder.solucao;
 
 import java.time.LocalDate;
+
+import com.nave.designpattern.Builder.Pessoa;
 
 public class TestePessoaBuilder {
     public static void main(String[] args) {

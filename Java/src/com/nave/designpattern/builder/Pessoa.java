@@ -1,4 +1,4 @@
-package com.nave.designpattern.builder;
+package com.nave.designpattern.Builder;
 
 import java.time.LocalDate;
 
@@ -10,7 +10,8 @@ public class Pessoa {
     private String apelido;
     private LocalDate dataNascimento;
 
-    private Pessoa(String nome, String sobrenome, String documento, String email, String apelido, LocalDate dataNascimento) {
+    private Pessoa(String nome, String sobrenome, String documento, String email, String apelido,
+            LocalDate dataNascimento) {
         this.nome = nome;
         this.sobrenome = sobrenome;
         this.documento = documento;
@@ -121,6 +122,5 @@ public class Pessoa {
             return new Pessoa(nome, sobrenome, documento, email, apelido, dataNascimento);
         }
     }
-
 
 }

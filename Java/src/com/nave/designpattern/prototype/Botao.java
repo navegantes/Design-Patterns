@@ -1,4 +1,4 @@
-package com.nave.designpattern.prototype;
+package com.nave.designpattern.Prototype;
 
 public class Botao {
     protected String cor;
