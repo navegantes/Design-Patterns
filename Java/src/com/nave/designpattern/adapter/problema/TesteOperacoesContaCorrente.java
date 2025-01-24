@@ -1,4 +1,4 @@
-package com.nave.designpattern.adapter.problema;
+package com.nave.designpattern.Adapter.problema;
 
 import java.math.BigDecimal;
 

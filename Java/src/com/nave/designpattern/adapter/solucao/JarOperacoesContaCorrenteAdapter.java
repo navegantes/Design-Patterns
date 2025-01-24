@@ -1,8 +1,8 @@
-package com.nave.designpattern.adapter.solucao;
+package com.nave.designpattern.Adapter.solucao;
 
 import java.math.BigDecimal;
 
-import com.nave.designpattern.adapter.problema.JarOperacoesContaCorrente;
+import com.nave.designpattern.Adapter.problema.JarOperacoesContaCorrente;
 
 public class JarOperacoesContaCorrenteAdapter {
     private JarOperacoesContaCorrente jarConta;
