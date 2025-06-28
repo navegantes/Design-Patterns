@@ -2,16 +2,14 @@ package com.nave.designpattern.Singleton.solucao;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Objects;
+// import java.util.Objects;
 
-public enum AgendaSingletonEnum
-{
+public enum AgendaSingletonEnum {
   INSTANCE;
 
   private Map<String, Boolean> diasDisponiveis = new HashMap<>();
 
-  private AgendaSingletonEnum()
-  {
+  private AgendaSingletonEnum() {
     diasDisponiveis.put("Domingo", Boolean.TRUE);
     diasDisponiveis.put("Segunda", Boolean.TRUE);
     diasDisponiveis.put("Terca", Boolean.TRUE);
@@ -21,12 +19,15 @@ public enum AgendaSingletonEnum
     diasDisponiveis.put("Sabado", Boolean.TRUE);
   }
 
-  public static AgendaSingletonEnum getInstance()
-  {
+  public static AgendaSingletonEnum getInstance() {
     return INSTANCE;
   }
 
-  public Map<String, Boolean> getDias(){ return diasDisponiveis; }
+  public Map<String, Boolean> getDias() {
+    return diasDisponiveis;
+  }
 
-  public void ocupa(String dia) { diasDisponiveis.replace(dia, Boolean.FALSE); }
+  public void ocupa(String dia) {
+    diasDisponiveis.replace(dia, Boolean.FALSE);
+  }
 }
